@@ -71,3 +71,30 @@ If you want, I can:
 - Add a LICENSE file.
 - Set up a basic GitHub Actions workflow for CI.
 - Create a remote for you if you provide the repo name and permission to run commands locally.
+
+## Repo created — push now (dieudonne‑og/quick_med_box)
+
+You already created the remote repo on GitHub. Run these from the project root:
+
+```bash
+cd /home/diolichat/Desktop/Flutter/QuickMediBox/quick_med_box
+git status                 # confirm clean working tree and current branch (main)
+git remote -v              # confirm origin points to git@github.com:dieudonne-og/quick_med_box.git
+git push -u origin main    # push your local main branch to GitHub
+```
+
+If you hit SSH auth problems:
+```bash
+ssh -T git@github.com     # test SSH auth
+# if "Permission denied", add an SSH key:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub   # copy into GitHub > Settings > SSH and GPG keys
+```
+
+If you prefer HTTPS (use PAT if prompted):
+```bash
+git remote set-url origin https://github.com/dieudonne-og/quick_med_box.git
+git push -u origin main
+```
