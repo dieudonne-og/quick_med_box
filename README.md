@@ -1,10 +1,15 @@
 # QuickMedBox
 
-A new Flutter project.
+QuickMedBox is a lightweight Flutter application to help users manage and track
+their medications. The app provides a simple, intuitive interface to record
+medication schedules, set reminders, and view a history of taken/ missed doses.
 
-## Getting Started
+This repository contains the source code for the QuickMedBox app (Flutter).
 
-This project is a starting point for a Flutter application.
+## Getting started
+
+These instructions will get you a local copy of QuickMedBox up and running for
+development and testing purposes.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -15,10 +20,37 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Local run:
+## Local run (development)
 
-1.  flutter pub get
-2.  flutter run
+1. Install dependencies:
+
+```sh
+flutter pub get
+```
+
+2. Run the app in debug mode (device or emulator):
+
+```sh
+flutter run
+```
+
+3. Run the tests (if available):
+
+```sh
+flutter test
+```
+
+## About this project
+
+QuickMedBox implements the following core features:
+
+- Add, edit and remove medications with dosing schedules
+- Local notifications and reminders for upcoming doses
+- Simple history view of taken/ missed medications
+- Lightweight, offline-first data persistence
+
+If you want to contribute or request features, please open an issue or a
+pull request. We welcome improvements that keep the app simple and reliable.
 
 ## Push to GitHub — step by step (prefilled for dieudonne-og)
 
@@ -71,6 +103,17 @@ If you want, I can:
 - Add a LICENSE file.
 - Set up a basic GitHub Actions workflow for CI.
 - Create a remote for you if you provide the repo name and permission to run commands locally.
+
+---
+
+If you'd like, I can also:
+
+- Add a LICENSE file (MIT/Apache/BSD) to this repo
+- Add continuous integration (GitHub Actions) to run `flutter analyze` and `flutter test`
+- Create a small CONTRIBUTING.md with contributor guidelines
+
+If you'd like a single short README variant for the Play Store / GitHub listing
+instead, tell me which sections to keep and I’ll make it concise.
 
 ## Repo created — push now (dieudonne‑og/quick_med_box)
 
