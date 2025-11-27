@@ -1,8 +1,9 @@
 # QuickMedBox
 
-QuickMedBox is a lightweight Flutter application to help users manage and track
-their medications. The app provides a simple, intuitive interface to record
-medication schedules, set reminders, and view a history of taken/ missed doses.
+QuickMedBox is a simple mobile app that helps users order essential medicines
+and health products from pharmacies near them. The app shows pharmacy
+options, product availability, and provides fast delivery so users can get
+essential items when they need them.
 
 This repository contains the source code for the QuickMedBox app (Flutter).
 
@@ -40,17 +41,37 @@ flutter run
 flutter test
 ```
 
-## About this project
+## Project overview
 
-QuickMedBox implements the following core features:
+1. App name
 
-- Add, edit and remove medications with dosing schedules
-- Local notifications and reminders for upcoming doses
-- Simple history view of taken/ missed medications
-- Lightweight, offline-first data persistence
+	QuickMedBox
+
+2. Simple description
+
+	QuickMedBox is a simple mobile app that helps users order essential
+	medicines and health products from pharmacies around them. The app shows
+	pharmacy options, product availability, and offers quick delivery.
+
+3. Target users
+
+	- Anyone who needs fast access to basic medicines
+	- Students and busy workers
+	- People who prefer delivery due to illness or long distance
+	- Elderly users who find it difficult to visit pharmacies
+
+4. Key features
+
+	- Easy Medicine Search: Browse popular categories like pain relief, flu
+	  care, vitamins, and first aid.
+	- Simple Cart Management: Add products, change quantities, and prepare
+	  your order smoothly.
+	- Quick Delivery: Users select a pharmacy, place an order, and receive
+	  fast delivery.
 
 If you want to contribute or request features, please open an issue or a
-pull request. We welcome improvements that keep the app simple and reliable.
+pull request. We welcome improvements that keep the app simple, reliable,
+and accessible to everyone.
 
 ## Push to GitHub — step by step (prefilled for dieudonne-og)
 
