@@ -20,29 +20,54 @@ samples, guidance on mobile development, and a full API reference.
 1.  flutter pub get
 2.  flutter run
 
-## Push to GitHub (basic):
+## Push to GitHub — step by step (prefilled for dieudonne-og)
 
-```bash
+Assuming you are in the project folder:
 cd /home/diolichat/Desktop/Flutter/QuickMediBox/quick_med_box
+
+1) Initialize repo & commit
+```bash
 git init
 git add .
 git commit -m "Initial commit"
 ```
 
-### Option A: GitHub CLI (recommended)
+2) Create a GitHub repository (pick one)
 
-install <https://cli.github.com> if needed
-
+Option A — GitHub CLI (recommended)
+- Install: https://cli.github.com
+- Create & push (creates repo dieudonne-og/quick_med_box and pushes):
 ```bash
-gh repo create USERNAME/quick_med_box --public --source=. --remote=origin --push
+gh auth login            # follow prompts to sign in
+gh repo create dieudonne-og/quick_med_box --public --source=. --remote=origin --push
 ```
 
-### Option B: manual remote
+Option B — Manual via GitHub web + git (SSH or HTTPS)
+- Create an empty repo named quick_med_box on github.com under dieudonne-og
+- Copy remote URL shown on GitHub and run:
 
+SSH:
 ```bash
-git remote add origin git@github.com:USERNAME/quick_med_box.git
+git remote add origin git@github.com:dieudonne-og/quick_med_box.git
 git branch -M main
 git push -u origin main
 ```
 
-Replace `USERNAME` with your GitHub username.
+HTTPS:
+```bash
+git remote add origin https://github.com/dieudonne-og/quick_med_box.git
+git branch -M main
+git push -u origin main
+```
+
+3) Verify
+- Visit https://github.com/dieudonne-og/quick_med_box to confirm files.
+
+Troubleshooting
+- Authentication: use gh auth login, add your SSH key, or create a personal access token (PAT) and use HTTPS.
+- Large files: add to .gitignore or use Git LFS.
+
+If you want, I can:
+- Add a LICENSE file.
+- Set up a basic GitHub Actions workflow for CI.
+- Create a remote for you if you provide the repo name and permission to run commands locally.
